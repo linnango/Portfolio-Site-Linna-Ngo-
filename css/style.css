@@ -3,6 +3,13 @@ Colors used:
 Background Color (cornsilk): #FFF8DC;
 Link Color (clay red): #CD5C5C;
 */
+* {
+  box-sizing: border-box;
+}
+
+main {
+  padding-top: 133px;
+}
 
 body {
   background-color: #FFF8DC;
@@ -15,6 +22,7 @@ body {
 
 img {
   width: 100%;
+  position:relative;
 }
 
 h1, h2, h3, h4 {
@@ -41,20 +49,107 @@ h4 {
   font-weight: 400;
 }
 
+/*header styling*/
+header {
+  background-color: #DEB887;opacity: 0.8;
+  padding: 10px;
+  margin: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  text-align: center;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row {
+  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+}
+
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+
+#work h1 {
+  text-align: center; /* Centers text */
+}
+
+.logo {
+  max-width: 250px;
+}
+
+.guru {
+  max-width: 250px;
+}
+
+.center {
+  text-align: center;
+}
+
+/*Navigation Bar Styling*/
+nav {
+  display: inline-block;
+  width: 100%
+}
+nav > ul {
+  list-style-type: none; /*removes bullet points*/
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block; /*horizontal styling*/
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+nav > ul > li > a:visited {
+color: #cc6540
+}
+nav > ul > li > a:hover,
+                a:focus {
+                  color: #cd5c5c;
+                  text-decoration: underline; /*Underlined when hovering*/
+                }
+nav > ul > li > a:active, {
+  color: #994c30
+}
+
+/*Hero Section Styling*/
+#hero {
+  background-color: #eedbc3;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+
+
+
 a {
-  color: #CD5C5C;
+  color: #cc6540;
   text-decoration: none; /*No Underlining */
+  font-weight: 500;
 }
 a:visited { /*visited link*/
-  color: #CD5C5C
+  color: #cc6540
 }
 a:hover,
 a:focus {
-  color: #cc6540;
+  color: #cd5c5c;
   text-decoration: underline; /*Underlined when hovering*/
 }
 a:active { /selected link*/
-color: $994c30
+color: #994c30
 }
 
 
@@ -67,7 +162,7 @@ color: $994c30
   background-color: #CD5C5C;
   color: #ffffff; /*override default link color*/
   font-weight: 400;
-  padding: 10px;
+  padding: 5px;
   border-radius: 3px
   border-bottom: 2px solid #994c30; /*width of border, type, color*/
   transition: 0.2s opacity;
@@ -78,11 +173,11 @@ color: $994c30
 }
 .button.contact {
   background-color: transparent;
-  color: #ff7f50;
+  color: #CD5C5C;
   text-transform: uppercase;
   border: 2px solid #CD5C5C;
 }
 .button:hover {
-  background-color: #CD5C5C;
-  color: #ffffff;
+  background-color: #FFE4C4;
+  color: #CD5C5C;
 }
