@@ -138,8 +138,6 @@ svg {
 max-width: 35px;
 }
 
-
-
 a {
   color: #cc6540;
   text-decoration: none; /*No Underlining */
@@ -157,7 +155,13 @@ a:active { /selected link*/
 color: #994c30
 }
 
-
+/*Work Section Styling*/
+#work {
+  background-color: #eedbc3;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
 
 
 /* KEEP BELOW SECTION AT END*/
