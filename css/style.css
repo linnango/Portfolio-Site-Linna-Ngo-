@@ -14,7 +14,7 @@ main {
 body {
   background-color: #FFF8DC;
   font-family: Montserrat, sans-serif;
-  font-size: 16px; /* Sets the font size to 12px */
+  font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
@@ -51,7 +51,7 @@ h4 {
 
 /*header styling*/
 header {
-  background-color: #DEB887;opacity: 0.8;
+  background-color: #ffffff;
   padding: 10px;
   margin: 10px;
   padding-top: 10px;
@@ -76,6 +76,9 @@ header {
 
 #hero h1 {
   text-align: center; /* Centers text */
+}
+#hero span {
+  display: block;
 }
 
 #work h1 {
@@ -131,7 +134,9 @@ nav > ul > li > a:active, {
   display: inline-block;
   width: 100%;
 }
-
+svg {
+max-width: 35px;
+}
 
 
 
@@ -151,7 +156,6 @@ a:focus {
 a:active { /selected link*/
 color: #994c30
 }
-
 
 
 
@@ -180,4 +184,46 @@ color: #994c30
 .button:hover {
   background-color: #FFE4C4;
   color: #CD5C5C;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  main {
+    padding-top: 99px;
+  }
+
+header {
+  text-align: unset;
+  padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  body {
+    background-color: #FFF8DC;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px; /* Sets the font size to 18px */
+  }
+.col-md-6 {
+width: 50%;
+float: left;
+padding:10px;
+}
+}
+
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
