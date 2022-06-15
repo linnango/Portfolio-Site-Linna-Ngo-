@@ -8,7 +8,7 @@ Link Color (clay red): #CD5C5C;
 }
 
 main {
-  padding-top: 133px;
+  padding-top: 1px;
 }
 
 body {
@@ -95,12 +95,17 @@ header {
   height: auto;
 }
 
-.guru {
-  max-width: 250px;
-}
-
 .center {
   text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+}
+
+.me {
+  text-align: left;
+  width: 250px;
 }
 
 [class*="col-"] {
