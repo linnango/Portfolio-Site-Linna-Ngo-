@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <script src="https://kit.fontawesome.com/b5aa5d700a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About Linna</title>
-    <body id="about-page">
+  </head>
+
+<body id="about-page">
 
 <!-- Header Section -->
 <header>
-  <div id="header">
   <div class="container">
+     <div class="navtoggle" id="myNavtoggle">
     <a href="index.html">
     <img class ="logo" src="img/portfolio/logo.png" alt="Linna Ngo">
   </a>
@@ -20,17 +23,19 @@
          <li><a href="pathguru.html">Work</a></li>
          <li><a href="about.html">About Me</a></li>
          <li><a href="#contact">Contact</a></li>
+         <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
       </ul>
    </nav>
-    </div>
+ </div>
     </div>
 </header>
 
 <main>
-      <!-- Hero Section -->
-      <div id="hero">
-        <div class="container">
+    <!-- Hero Section -->
+    <div id="hero">
+      <div class="container">
         <h1> Hi! I'm Linna.</h1>
+      <div class="row">
         <p>
           I’m a UX Designer and Researcher with a specialization in front-end development. Currently based in New York City.
         </p>
@@ -41,6 +46,7 @@
           My colleagues describe me as an eager and collaborative team player that is very goal-oriented.
         </p>
       </div>
+    </div>
 
     <div class="container col-md-6 col-lg-5">
       <h3>My Skills</h3>
@@ -88,6 +94,10 @@
 <p> Copyright Linna Ngo Design, 2022</p>
 
 </footer>
-<script src="js/scripts.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 </body>
 </html>

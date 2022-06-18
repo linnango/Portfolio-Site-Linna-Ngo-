@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <script src="https://kit.fontawesome.com/b5aa5d700a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta charset="utf-8">
@@ -8,11 +9,11 @@
     <title>Linna's Work</title>
   </head>
 
-<body id="about-page">
+<body id="work-page">
  <!-- Header Section -->
  <header>
-     <div id="header">
      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
        <a href="index.html">
        <img class ="logo" src="img/portfolio/logo.png" alt="Linna Ngo">
      </a>
@@ -21,6 +22,7 @@
            <li><a href="pathguru.html">Work</a></li>
            <li><a href="about.html">About Me</a></li>
            <li><a href="#contact">Contact</a></li>
+           <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
          </ul>
        </nav>
      </div>
@@ -101,6 +103,10 @@
   <p> Copyright Linna Ngo Design, 2022</p>
 
   </footer>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
   </body>
   </html>

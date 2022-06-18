@@ -52,13 +52,12 @@ h4 {
 /*header styling*/
 header {
   background-color: #ffffff;
-  padding: 10px;
+  padding: 10px 0 4px;
   margin: 10px;
   padding-top: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
-  text-align: center;
 }
 
 /* Layout styling */
@@ -86,7 +85,7 @@ header {
 }
 
 .logo {
-  max-width: 230px;
+  max-width: 150px;
 }
 
 .berlin-illustration {
@@ -118,22 +117,22 @@ header {
   display: table;
 }
 
+#index-page h3 {
+  margin-top: 0;
+}
 #about-page h3 {
+  margin-top: 0;
+}
+#work-page h3 {
   margin-top: 0;
 }
 
 
 /*Navigation Bar Styling*/
-nav {
-  display: inline-block;
-  width: 100%
-}
 nav > ul {
   list-style-type: none; /*removes bullet points*/
   padding: 0;
-}
-nav > ul > li {
-  display: inline-block; /*horizontal styling*/
+  margin: 0;
 }
 nav > ul > li > a {
   padding: 0 15px;
@@ -142,7 +141,7 @@ nav > ul > li > a {
   color: #4a4a4a;
 }
 nav > ul > li > a:visited {
-color: #cc6540
+  color: #cc6540
 }
 nav > ul > li > a:hover,
                 a:focus {
@@ -153,6 +152,31 @@ nav > ul > li > a:active, {
   color: #994c30
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
 /*Hero Section Styling*/
 #hero {
   background-color: #eedbc3;
@@ -264,6 +288,13 @@ header {
     float: right;
     margin-top: 4px;
   }
+  nav > ul {
+  margin: 1em 0;
+  }
+  nav > ul > li {
+    display: inline-block; /*horizontal styling*/
+  }
+
   body {
     background-color: #FFF8DC;
     font-family: Montserrat, sans-serif;
@@ -275,7 +306,9 @@ width: 50%;
 float: left;
 padding:10px;
 }
-
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
 
 /* ==============================
 Large devices (1024px or larger)
@@ -300,8 +333,19 @@ padding:10px;
   margin-left: auto;
   margin-right: auto;
 }
+
+.navtoggle li:last-child {
+  display: none;
+}
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
+}
+.logo {
+  min-width: 150px;
+}
+
+.navtoggle li:last-child {
+  display: none;
 }
