@@ -275,7 +275,7 @@ Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
 main {
-    padding-top: 99px;
+    padding-top: 1px;
   }
 
 header {
