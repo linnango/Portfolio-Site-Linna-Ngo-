@@ -259,6 +259,13 @@ color: #994c30
   text-transform: uppercase;
   border: 2px solid #CD5C5C;
 }
+.button.resume {
+  background-color: transparent;
+  color: #CD5C5C;
+  text-transform: uppercase;
+  border: 2px solid #CD5C5C;
+  float: center;
+}
 .button.prototype {
   background-color: transparent;
   color: #CD5C5C;
