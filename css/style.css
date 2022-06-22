@@ -14,15 +14,18 @@ main {
 body {
   background-color: #FFF8DC;
   font-family: Joan;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
 }
 
 img {
   width: 100%;
-  position:relative;
+  position: relative;
 }
 
 h1, h2, h3, h4 {
@@ -66,22 +69,27 @@ header {
 }
 
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
 }
 
 #work .row {
-  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
 }
 
 #hero h1 {
-  text-align: center; /* Centers text */
+  text-align: center;
+  /* Centers text */
 }
+
 #hero span {
   display: block;
 }
 
 #work h1 {
-  text-align: center; /* Centers text */
+  text-align: center;
+  /* Centers text */
 }
 
 .logo {
@@ -104,7 +112,7 @@ header {
 }
 
 .me {
-  margin-right:20px;
+  margin-right: 20px;
   float: right;
   width: 300px;
 }
@@ -122,43 +130,53 @@ header {
 #index-page h3 {
   margin-top: 0;
 }
+
 #about-page h3 {
   margin-top: 0;
 }
+
 #work-page h3 {
   margin-top: 0;
 }
 
 /*Navigation Bar Styling*/
-nav > ul {
-  list-style-type: none; /*removes bullet points*/
+nav>ul {
+  list-style-type: none;
+  /*removes bullet points*/
   padding: 0;
   margin: 0;
 }
-nav > ul > li > a {
+
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
 }
-nav > ul > li > a:visited {
+
+nav>ul>li>a:visited {
   color: #cc6540
 }
-nav > ul > li > a:hover,
-                a:focus {
-                  color: #cd5c5c;
-                  text-decoration: underline; /*Underlined when hovering*/
-                }
-nav > ul > li > a:active, {
-  color: #994c30
+
+nav>ul>li>a:hover,
+a:focus {
+  color: #cd5c5c;
+  text-decoration: underline;
+  /*Underlined when hovering*/
+}
+
+nav>ul>li>a:active, {
+color: #994c30
 }
 
 .navtoggle li:not(:last-child) {
   display: none;
 }
+
 .navtoggle, .navtoggle.responsive {
   position: relative;
 }
+
 .navtoggle li .icon {
   position: absolute;
   right: 0;
@@ -166,18 +184,21 @@ nav > ul > li > a:active, {
   font-size: 20px;
   padding-right: 0;
 }
+
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
+
 /*Hero Section Styling*/
 #hero {
   background-color: #eedbc3;
@@ -185,25 +206,32 @@ nav > ul > li > a:active, {
   display: inline-block;
   width: 100%;
 }
+
 svg {
-max-width: 35px;
+  max-width: 35px;
 }
 
 a {
   color: #cc6540;
-  text-decoration: none; /*No Underlining */
+  text-decoration: none;
+  /*No Underlining */
   font-weight: 500;
 }
-a:visited { /*visited link*/
+
+a:visited {
+  /*visited link*/
   color: #cc6540
 }
+
 a:hover,
 a:focus {
   color: #cd5c5c;
-  text-decoration: underline; /*Underlined when hovering*/
+  text-decoration: underline;
+  /*Underlined when hovering*/
 }
-a:active { /selected link*/
-color: #994c30
+
+a:active {
+  /selected link*/ color: #994c30
 }
 
 /*Work Section Styling*/
@@ -216,25 +244,47 @@ color: #994c30
 
 /*Animation Section Styling*/
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
+
 .sun {
-   animation: 3s color-change infinite alternate linear;
+  animation: 3s color-change infinite alternate linear;
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
+
 .cloud-front {
- animation: 13s cloud-move infinite alternate linear;
+  animation: 13s cloud-move infinite alternate linear;
 }
+
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
+
 .cloud-back {
   animation: 18s cloud-move-reverse infinite alternate linear;
 }
@@ -243,23 +293,28 @@ color: #994c30
 .button {
   display: inline-block;
   background-color: #CD5C5C;
-  color: #ffffff; /*override default link color*/
+  color: #ffffff;
+  /*override default link color*/
   font-weight: 400;
   padding: 5px;
-  border-radius: 3px
-  border-bottom: 2px solid #994c30; /*width of border, type, color*/
+  border-radius: 3px border-bottom: 2px solid #994c30;
+  /*width of border, type, color*/
   transition: 0.3s opacity;
 }
+
 .button:hover {
-  opacity: 0.8; /*Reduces opacity*/
+  opacity: 0.8;
+  /*Reduces opacity*/
   text-decoration: none;
 }
+
 .button.contact {
   background-color: transparent;
   color: #CD5C5C;
   text-transform: uppercase;
   border: 2px solid #CD5C5C;
 }
+
 .button.resume {
   background-color: transparent;
   color: #CD5C5C;
@@ -267,12 +322,14 @@ color: #994c30
   border: 2px solid #CD5C5C;
   float: center;
 }
+
 .button.prototype {
   background-color: transparent;
   color: #CD5C5C;
   text-transform: uppercase;
   border: 2px solid #CD5C5C;
 }
+
 .button:hover {
   background-color: #CD5C5C;
   color: #ffffff;
@@ -282,13 +339,13 @@ color: #994c30
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-main {
+  main {
     padding-top: 1px;
   }
 
-header {
-  text-align: unset;
-  padding: 20px 0 13px;
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
   }
 
   nav {
@@ -296,64 +353,69 @@ header {
     float: right;
     margin-top: 4px;
   }
-  nav > ul {
-  margin: 1em 0;
+
+  nav>ul {
+    margin: 1em 0;
   }
-  nav > ul > li {
-    display: inline-block; /*horizontal styling*/
+
+  nav>ul>li {
+    display: inline-block;
+    /*horizontal styling*/
   }
 
   body {
     background-color: #FFF8DC;
     font-family: Montserrat, sans-serif;
-    font-size: 18px; /* Sets the font size to 18px */
+    font-size: 18px;
+    /* Sets the font size to 18px */
   }
 
-.col-md-6 {
-width: 50%;
-float: left;
-padding:10px;
-}
-.navtoggle li:not(:last-child) {
-  display: inline-block;
-}
+  .col-md-6 {
+    width: 50%;
+    float: left;
+    padding: 10px;
+  }
 
-/* ==============================
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {
-}
+  @media only screen and (min-width: 1024px) {}
 
-.col-md-7 {
-width: 58.33%;
-float: left;
-padding:10px;
-}
+  .col-md-7 {
+    width: 58.33%;
+    float: left;
+    padding: 10px;
+  }
 
-.col-md-5 {
-width: 41.66%;
-float: left;
-padding:10px;
-}
+  .col-md-5 {
+    width: 41.66%;
+    float: left;
+    padding: 10px;
+  }
 
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.navtoggle li:last-child {
-  display: none;
-}
-/* ==============================
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-}
-.logo {
-  min-width: 150px;
-}
+  @media only screen and (min-width: 1440px) {}
 
-.navtoggle li:last-child {
-  display: none;
-}
+  .logo {
+    min-width: 150px;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
