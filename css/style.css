@@ -104,8 +104,9 @@ header {
 }
 
 .me {
-  float: right
-  height: 200px;
+  margin-right:20px;
+  float: right;
+  width: 300px;
 }
 
 [class*="col-"] {
